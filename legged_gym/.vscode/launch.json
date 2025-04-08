@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0", 
+    "python": { 
+        "pythonPath": "/data/winter25/shaos/miniconda3/envs/parkour/bin/"
+    },
+    "configurations": [
+        {
+            "name": "train_debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/data/winter25/shaos/workspace/parkour/legged_gym/legged_gym/scripts/train.py",
+            "console": "integratedTerminal",
+            "args":["--task=go2_field",
+                    "--headless",
+                    "--rl_device=cuda:3",
+                    "--sim_device=cuda:3",
+                    ]
+        }
+    ]
+}
